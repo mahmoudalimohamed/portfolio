@@ -4,23 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#0f172a', // Slate 900
-        heading: '#e2e8f0',    // Slate 200
-        text: '#94a3b8',       // Slate 400
-        accent: '#5eead4',     // Teal 300
-
-        // Semantic names matching Brittany's palette
-        navy: '#0f172a',
-        'light-navy': '#1e293b', // Slate 800
-        'lightest-navy': '#334155', // Slate 700
-        slate: '#94a3b8',
-        'light-slate': '#cbd5e1', // Slate 300
-        'lightest-slate': '#e2e8f0', // Slate 200
-        teal: '#5eead4',
+        navy: '#0a192f',
+        'light-navy': '#112240',
+        'lightest-navy': '#233554',
+        slate: '#8892b0',
+        'light-slate': '#a8b2d1',
+        'lightest-slate': '#ccd6f6',
+        white: '#e6f1ff',
         green: '#64ffda',
+        // Aliases for semantic usage if needed, but sticking to specific names is better for this clone
+        background: '#0a192f',
+        heading: '#ccd6f6',
+        text: '#8892b0',
+        accent: '#64ffda',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Calibre', 'Inter', 'San Francisco', 'SF Pro Text', '-apple-system', 'system-ui', 'sans-serif'],
+        mono: ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'monospace'],
       },
     },
   },

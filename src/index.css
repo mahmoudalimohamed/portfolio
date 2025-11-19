@@ -4,13 +4,27 @@
 
 @layer base {
   body {
-    @apply bg-background text-text font-sans antialiased selection:bg-accent selection:text-background;
+    @apply bg-navy text-slate font-sans antialiased leading-relaxed selection:bg-green selection:text-navy;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-heading font-bold;
+    @apply text-lightest-slate font-bold;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-navy;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-light-navy border-2 border-navy rounded-[10px];
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-lightest-navy;
 }

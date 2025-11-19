@@ -1,43 +1,29 @@
-import { useState, useEffect } from 'react';
-import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import Layout from './components/Layout';
+import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const updateMousePosition = (ev) => {
-      setMousePosition({ x: ev.clientX, y: ev.clientY });
-    };
-
-    window.addEventListener('mousemove', updateMousePosition);
-
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, []);
-
   return (
-    <div
-      className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
-      style={{
-        background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
-      }}
-    >
-      <div className="lg:flex lg:justify-between lg:gap-4">
-        <Sidebar />
-        <Content>
-          <About />
-          <Experience />
-          <Projects />
-          <Footer />
-        </Content>
-      </div>
-    </div>
+    <Layout>
+      <Hero />
+      <section id="about" className="min-h-screen py-20">
+        <About />
+      </section>
+      <section id="experience" className="min-h-screen py-20">
+        <Experience />
+      </section>
+      <section id="projects" className="min-h-screen py-20">
+        <Projects />
+      </section>
+      <section id="contact" className="min-h-screen py-20 flex flex-col justify-center">
+        <Contact />
+      </section>
+      <Footer />
+    </Layout>
   );
 }
 
