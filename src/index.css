@@ -3,16 +3,48 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply box-border;
+  }
+  
   body {
     @apply bg-navy text-slate font-sans antialiased leading-relaxed selection:bg-green selection:text-navy;
+    overflow-x: hidden;
   }
+  
   h1, h2, h3, h4, h5, h6 {
     @apply text-lightest-slate font-bold;
+  }
+  
+  a {
+    @apply no-underline;
+  }
+  
+  a:focus {
+    @apply outline-none ring-0;
+  }
+  
+  button:focus {
+    @apply outline-none;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Fix for project image links - ensure no green backgrounds */
+.project-image-link,
+.project-image-link::before,
+.project-image-link::after {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.project-image-link:focus,
+.project-image-link:active,
+.project-image-link:visited {
+  background-color: transparent !important;
 }
 
 /* Custom Scrollbar */
@@ -27,4 +59,26 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-lightest-navy;
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Improve link hover effects */
+a[href^="http"]:hover,
+a[href^="mailto"]:hover {
+  transition: all 0.3s ease;
 }
