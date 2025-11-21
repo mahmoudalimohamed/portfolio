@@ -43,50 +43,34 @@ const Hero = () => {
         animate={inView ? "visible" : "hidden"}
         className="w-full"
       >
-        <motion.h1
+        <motion.h2
           variants={itemVariants}
           className="text-green font-mono text-sm md:text-base mb-5 ml-1"
         >
-          Hi, my name is
-        </motion.h1>
-        <motion.h2
-          variants={itemVariants}
-          className="text-lightest-slate text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold mb-4 tracking-tight leading-[1.1]"
-        >
-          Brittany Chiang.
+          Welcome To My Portfolio,
         </motion.h2>
+
         <motion.h3
           variants={itemVariants}
-          className="text-slate text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]"
+          className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold mb-8 tracking-tight leading-[1.1]"
         >
           I build things for the web.
         </motion.h3>
         <motion.p
           variants={itemVariants}
-          className="text-slate max-w-[540px] text-lg md:text-xl leading-relaxed mb-12"
+          className="text-white max-w-[540px] text-lg md:text-xl leading-relaxed mb-12"
         >
-          I'm a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I'm focused on
-          building accessible, human-centered products at{" "}
-          <a
-            href="https://upstatement.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-green hover:underline inline-block relative group"
-          >
-            <span className="relative z-10">Upstatement</span>
-            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-          </a>
-          .
+          I'm a Full-Stack Engineer creating scalable web & mobile apps using
+          React, React Native, and Django.
         </motion.p>
         <motion.a
           variants={itemVariants}
-          href="https://github.com/bchiang7"
+          href="https://github.com/mahmoudalimohamed"
           target="_blank"
           rel="noreferrer"
           className="px-7 py-4 border border-green text-green rounded font-mono text-sm hover:bg-green/10 transition-all duration-300 inline-block"
         >
-          Check out my course!
+          Check out my projects
         </motion.a>
       </motion.div>
     </section>

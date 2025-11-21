@@ -9,12 +9,16 @@ const About = () => {
   });
 
   const skills = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Eleventy",
+    "JavaScript",
+    "React & React Native",
     "Node.js",
-    "WordPress",
+    "Express",
+    "Python",
+    "Django & Django REST Framework",
+    "MySQL & PostgreSQL",
+    "Supabase & AppWrite",
+    "Clerk Auth",
+    "TailwindCSS & Styled Components",
   ];
 
   const containerVariants = {
@@ -62,59 +66,24 @@ const About = () => {
           className="md:col-span-2 text-slate text-lg leading-relaxed"
         >
           <p className="mb-4">
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hello! My name is Mahmoud Ali, and I enjoy building modern digital
+            products that solve real problems. My journey into development
+            started with a simple curiosity about how websites worked — and that
+            curiosity quickly grew into a passion for creating full-stack
+            applications that feel smooth, fast, and intuitive.
           </p>
           <p className="mb-4">
-            Fast-forward to today, and I've had the privilege of working at an{" "}
-            <a
-              href="#"
-              className="text-green hover:underline inline-block relative group"
-            >
-              <span className="relative z-10">advertising agency</span>
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-            , a{" "}
-            <a
-              href="#"
-              className="text-green hover:underline inline-block relative group"
-            >
-              <span className="relative z-10">start-up</span>
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-            , a{" "}
-            <a
-              href="#"
-              className="text-green hover:underline inline-block relative group"
-            >
-              <span className="relative z-10">huge corporation</span>
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-            , and a{" "}
-            <a
-              href="#"
-              className="text-green hover:underline inline-block relative group"
-            >
-              <span className="relative z-10">student-led design studio</span>
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-            . My main focus these days is building accessible, inclusive
-            products and digital experiences at{" "}
-            <a
-              href="#"
-              className="text-green hover:underline inline-block relative group"
-            >
-              <span className="relative z-10">Upstatement</span>
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            </a>
-            .
+            Over the years, I’ve worked on a variety of projects ranging from
+            React frontends, React Native mobile apps, to Django REST APIs
+            powering real production systems. I’ve built everything from
+            portfolio designs, authentication flows, and UI components, to
+            complete platforms like work-hours management systems, project
+            tracking dashboards, and time slot booking systems.
           </p>
           <p className="mb-4">
-            I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React.
+            I also spend a lot of time refining my workflow: Docker setups, S3
+            static hosting, MySQL/PostgreSQL databases, and deploying Django +
+            React in real environments.
           </p>
           <p className="mb-4">
             Here are a few technologies I've been working with recently:

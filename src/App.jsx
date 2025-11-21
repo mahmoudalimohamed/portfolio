@@ -11,19 +11,21 @@ function App() {
   return (
     <Layout>
       <Hero />
-      <section id="about" className="min-h-screen py-20 md:py-32">
+      <section id="about" className="min-h-screen py-20 md:py-20">
         <About />
       </section>
-      <section id="experience" className="min-h-screen py-20 md:py-32">
+      <section id="experience" className="min-h-screen py-20 md:py-20">
         <Experience />
       </section>
-      <section id="projects" className="min-h-screen py-20 md:py-32">
+      <section id="projects" className="min-h-screen py-20 md:py-20">
         <Projects />
+      </section>
+      <section id="other-projects" className="min-h-screen py-20 md:py-20">
         <OtherProjects />
       </section>
       <section
         id="contact"
-        className="min-h-screen py-20 md:py-32 justify-center"
+        className="min-h-screen py-20 md:py-20 justify-center"
       >
         <Contact />
       </section>

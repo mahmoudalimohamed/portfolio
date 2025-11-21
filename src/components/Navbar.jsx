@@ -81,19 +81,18 @@ const Navbar = () => {
                 viewBox="0 0 84 96"
                 className="w-10 h-10 fill-none stroke-green stroke-2 hover:fill-green/10 transition-colors"
               >
-                <title>Logo</title>
                 <g transform="translate(-8.000000, -2.000000)">
                   <g transform="translate(11.000000, 5.000000)">
                     <polygon points="41 0 82 24 82 72 41 96 0 72 0 24" />
                     <text
-                      x="28"
-                      y="60"
+                      x="20"
+                      y="65"
                       fill="#64ffda"
-                      fontSize="45px"
+                      fontSize="50px"
                       fontWeight="bold"
                       stroke="none"
                     >
-                      B
+                      M
                     </text>
                   </g>
                 </g>
@@ -102,7 +101,7 @@ const Navbar = () => {
           </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <ol className="flex gap-8 text-sm font-mono text-lightest-slate">
+            <ol className="flex gap-8 text-sm font-mono text-white">
               {navLinks.map((link, index) => (
                 <li key={link.name}>
                   <a
@@ -196,7 +195,7 @@ const Navbar = () => {
           </button>
 
           <nav className="flex flex-col items-center justify-center gap-8 text-center w-full py-24 px-6 min-h-full">
-            <ol className="flex flex-col gap-8 text-lg font-mono text-lightest-slate">
+            <ol className="flex flex-col gap-8 text-lg font-mono text-white">
               {navLinks.map((link, index) => (
                 <li key={link.name}>
                   <a
